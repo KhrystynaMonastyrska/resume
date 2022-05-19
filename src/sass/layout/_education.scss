@@ -1,0 +1,118 @@
+.education {
+  padding: 40px 0 40px 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-items {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 11px 1px rgba(34, 60, 80, 0.2);
+    display: flex;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 11px 12px rgba(34, 60, 80, 0.2);
+    }
+
+    &-main-info {
+      width: 300px;
+      background-color: var(--primary);
+      padding: 50px;
+
+      &-years {
+        color: var(--white);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &-degree {
+        color: var(--white);
+        text-align: center;
+      }
+    }
+
+    &-info {
+      padding: 30px;
+
+      &-name {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      &-specialty {
+        font-size: 14px;
+        color: var(--gray);
+        line-height: 24px;
+
+        span {
+          font-weight: 700;
+          color: var(--black);
+        }
+
+        a {
+          text-decoration: none;
+          color: #0000ff;
+          transition: all 0.5s ease;
+
+          &:hover {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .education {
+    &-items {
+      width: 80%;
+
+      &-main-info {
+        width: 200px;
+        height: 210px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-years {
+          width: 140px;
+        }
+        &-degree {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education {
+    &-items {
+      display: block;
+      margin: 0 auto;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &-main-info {
+        width: 100%;
+        align-items: center;
+
+        &-years {
+          width: auto;
+        }
+        &-degree {
+          width: auto;
+        }
+      }
+    }
+  }
+}

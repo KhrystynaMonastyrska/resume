@@ -1,0 +1,15 @@
+.background-footer {
+  background: var(--black);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: var(--gray-light);
+
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+    }
+  }
+}
