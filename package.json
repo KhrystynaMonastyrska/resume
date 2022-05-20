@@ -3,9 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://MaksStelmakh.github.io/timeless",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/",
+    "build": "parcel build src/*.html --public-url /timeless/",
     "predeploy": "npm run build",
     "deploy": "netlyfy deploy -p"
   },
